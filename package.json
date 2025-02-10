@@ -1,0 +1,22 @@
+{
+  "name": "api-rest-node-typescript",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "chilenguedevstack",
+  "author": "devstack",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  }
+}
