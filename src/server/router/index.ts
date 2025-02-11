@@ -1,9 +1,17 @@
 import { Router } from "express";
+import { StatusCodes } from "http-status-codes";
 
-const router =Router();
+const router = Router();
 
-router.get('/teste', (_, res)=>{
-    res.send("ola")
-})
+router.get('/teste', (_, res) => {
+    res.send("ola");
+});
 
-export {router};
+router.post('/teste', (req, res) => {
+    console.log(req.query); 
+    console.log(req.body); 
+
+    res.status(StatusCodes.UNAUTHORIZED).json(req.body);
+});
+
+export { router };
