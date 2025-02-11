@@ -8,8 +8,9 @@
   "private": false,
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon src/index.ts",
-    "start": "ts-node-dev ./src/index.ts"
+    "start": "ts-node-dev ./src/index.ts",
+    "dev": "nodemon --ext ts --exec ts-node src/server/Server.ts"
+
   },
   "dependencies": {
     "dotenv": "^16.4.7",
