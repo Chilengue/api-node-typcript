@@ -9,6 +9,6 @@ router.get('/', (_, res)=>{
          res.send('ola dev');
 })
 
-    router.post('/cidade', CidadesController.createBodyValidator);
+    router.post('/cidade', CidadesController.createBodyValidator, CidadesController.create);
 
 export { router };
