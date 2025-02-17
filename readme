@@ -1,0 +1,5 @@
+#
+inner e uma lista
+yupError.inner.forEach(error=>{
+    console.log(error)
+})
